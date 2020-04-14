@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/libsrc.dir/glad.c.o"
-  "liblibsrc.pdb"
   "liblibsrc.a"
+  "liblibsrc.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

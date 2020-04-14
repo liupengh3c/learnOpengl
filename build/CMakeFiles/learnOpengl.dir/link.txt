@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/learnOpengl.dir/main.cc.o  -o learnOpengl -lglfw3 libsrc/liblibsrc.a shader/libshader.a -lGL -lX11 -lpthread -ldl 
+/usr/bin/c++    -rdynamic CMakeFiles/learnOpengl.dir/main.cc.o  -o learnOpengl  -lglfw3 libsrc/liblibsrc.a shader/libshader.a -lGL -lX11 -lpthread -ldl 

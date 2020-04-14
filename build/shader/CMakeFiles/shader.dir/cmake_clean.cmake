@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/shader.dir/shader.cc.o"
-  "libshader.pdb"
   "libshader.a"
+  "libshader.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
