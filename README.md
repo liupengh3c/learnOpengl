@@ -7,7 +7,7 @@
 ### 英文文档地址：https://learnopengl.com/Getting-started/Textures
 
 
-### 窗口管理库：glfw
-### opengl扩展：glad
-### 纹理加载库：stb_image
-### 矩阵计算库：glm
+### 窗口管理库：glfw, https://www.glfw.org/download.html
+### opengl扩展：glad, https://glad.dav1d.de/
+### 纹理加载库：stb_image, https://github.com/nothings/stb/blob/master/stb_image.h
+### 矩阵计算库：glm, https://glm.g-truc.net/0.9.9/index.html
