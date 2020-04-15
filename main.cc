@@ -14,5 +14,13 @@ int main(int argc, char **argv)
     {
         shader();
     }
+    else if (strcmp(argv[1], "coordinate") == 0)
+    {
+        coordinate();
+    }
+    else if (strcmp(argv[1], "camera") == 0)
+    {
+        camera();
+    }
     return 0;
 }

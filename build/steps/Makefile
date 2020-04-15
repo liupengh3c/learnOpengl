@@ -142,6 +142,60 @@ steps/fast:
 	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/build
 .PHONY : steps/fast
 
+camera.o: camera.cc.o
+
+.PHONY : camera.o
+
+# target to build an object file
+camera.cc.o:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/camera.cc.o
+.PHONY : camera.cc.o
+
+camera.i: camera.cc.i
+
+.PHONY : camera.i
+
+# target to preprocess a source file
+camera.cc.i:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/camera.cc.i
+.PHONY : camera.cc.i
+
+camera.s: camera.cc.s
+
+.PHONY : camera.s
+
+# target to generate assembly for a file
+camera.cc.s:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/camera.cc.s
+.PHONY : camera.cc.s
+
+coordinate.o: coordinate.cc.o
+
+.PHONY : coordinate.o
+
+# target to build an object file
+coordinate.cc.o:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/coordinate.cc.o
+.PHONY : coordinate.cc.o
+
+coordinate.i: coordinate.cc.i
+
+.PHONY : coordinate.i
+
+# target to preprocess a source file
+coordinate.cc.i:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/coordinate.cc.i
+.PHONY : coordinate.cc.i
+
+coordinate.s: coordinate.cc.s
+
+.PHONY : coordinate.s
+
+# target to generate assembly for a file
+coordinate.cc.s:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/coordinate.cc.s
+.PHONY : coordinate.cc.s
+
 shader.o: shader.cc.o
 
 .PHONY : shader.o
@@ -178,6 +232,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... steps"
+	@echo "... camera.o"
+	@echo "... camera.i"
+	@echo "... camera.s"
+	@echo "... coordinate.o"
+	@echo "... coordinate.i"
+	@echo "... coordinate.s"
 	@echo "... shader.o"
 	@echo "... shader.i"
 	@echo "... shader.s"

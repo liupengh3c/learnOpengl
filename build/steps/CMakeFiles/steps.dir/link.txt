@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsteps.a  CMakeFiles/steps.dir/shader.cc.o
+/usr/bin/ar qc libsteps.a  CMakeFiles/steps.dir/camera.cc.o CMakeFiles/steps.dir/coordinate.cc.o CMakeFiles/steps.dir/shader.cc.o
 /usr/bin/ranlib libsteps.a
