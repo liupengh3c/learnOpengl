@@ -1,6 +1,7 @@
 # learnOpengl
 
 ### 服务端rd学渲染
+### 环境: ubuntu 18.04
 
 ### 地址：https://learnopengl-cn.github.io/02%20Lighting/01%20Colors/
 ### 英文文档地址：https://learnopengl.com/Getting-started/Textures
