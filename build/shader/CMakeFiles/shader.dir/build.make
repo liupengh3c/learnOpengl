@@ -74,27 +74,27 @@ include shader/CMakeFiles/shader.dir/progress.make
 # Include the compile flags for this target's objects.
 include shader/CMakeFiles/shader.dir/flags.make
 
-shader/CMakeFiles/shader.dir/shader.cc.o: shader/CMakeFiles/shader.dir/flags.make
-shader/CMakeFiles/shader.dir/shader.cc.o: ../shader/shader.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liupeng/work/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object shader/CMakeFiles/shader.dir/shader.cc.o"
-	cd /home/liupeng/work/learnOpengl/build/shader && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shader.dir/shader.cc.o -c /home/liupeng/work/learnOpengl/shader/shader.cc
+shader/CMakeFiles/shader.dir/shader_base.cc.o: shader/CMakeFiles/shader.dir/flags.make
+shader/CMakeFiles/shader.dir/shader_base.cc.o: ../shader/shader_base.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liupeng/work/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object shader/CMakeFiles/shader.dir/shader_base.cc.o"
+	cd /home/liupeng/work/learnOpengl/build/shader && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shader.dir/shader_base.cc.o -c /home/liupeng/work/learnOpengl/shader/shader_base.cc
 
-shader/CMakeFiles/shader.dir/shader.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shader.dir/shader.cc.i"
-	cd /home/liupeng/work/learnOpengl/build/shader && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liupeng/work/learnOpengl/shader/shader.cc > CMakeFiles/shader.dir/shader.cc.i
+shader/CMakeFiles/shader.dir/shader_base.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shader.dir/shader_base.cc.i"
+	cd /home/liupeng/work/learnOpengl/build/shader && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liupeng/work/learnOpengl/shader/shader_base.cc > CMakeFiles/shader.dir/shader_base.cc.i
 
-shader/CMakeFiles/shader.dir/shader.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shader.dir/shader.cc.s"
-	cd /home/liupeng/work/learnOpengl/build/shader && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liupeng/work/learnOpengl/shader/shader.cc -o CMakeFiles/shader.dir/shader.cc.s
+shader/CMakeFiles/shader.dir/shader_base.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shader.dir/shader_base.cc.s"
+	cd /home/liupeng/work/learnOpengl/build/shader && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liupeng/work/learnOpengl/shader/shader_base.cc -o CMakeFiles/shader.dir/shader_base.cc.s
 
 # Object files for target shader
 shader_OBJECTS = \
-"CMakeFiles/shader.dir/shader.cc.o"
+"CMakeFiles/shader.dir/shader_base.cc.o"
 
 # External object files for target shader
 shader_EXTERNAL_OBJECTS =
 
-shader/libshader.a: shader/CMakeFiles/shader.dir/shader.cc.o
+shader/libshader.a: shader/CMakeFiles/shader.dir/shader_base.cc.o
 shader/libshader.a: shader/CMakeFiles/shader.dir/build.make
 shader/libshader.a: shader/CMakeFiles/shader.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liupeng/work/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libshader.a"

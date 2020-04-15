@@ -97,14 +97,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/liupeng/work/learnOpengl/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles /home/liupeng/work/learnOpengl/build/shader/CMakeFiles/progress.marks
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 shader/all
+	cd /home/liupeng/work/learnOpengl/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles /home/liupeng/work/learnOpengl/build/steps/CMakeFiles/progress.marks
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 steps/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 shader/clean
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 steps/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,12 +114,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 shader/preinstall
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 steps/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 shader/preinstall
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 steps/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -128,46 +128,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-shader/CMakeFiles/shader.dir/rule:
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 shader/CMakeFiles/shader.dir/rule
-.PHONY : shader/CMakeFiles/shader.dir/rule
+steps/CMakeFiles/steps.dir/rule:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f CMakeFiles/Makefile2 steps/CMakeFiles/steps.dir/rule
+.PHONY : steps/CMakeFiles/steps.dir/rule
 
 # Convenience name for target.
-shader: shader/CMakeFiles/shader.dir/rule
+steps: steps/CMakeFiles/steps.dir/rule
 
-.PHONY : shader
+.PHONY : steps
 
 # fast build rule for target.
-shader/fast:
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f shader/CMakeFiles/shader.dir/build.make shader/CMakeFiles/shader.dir/build
-.PHONY : shader/fast
+steps/fast:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/build
+.PHONY : steps/fast
 
-shader_base.o: shader_base.cc.o
+shader.o: shader.cc.o
 
-.PHONY : shader_base.o
+.PHONY : shader.o
 
 # target to build an object file
-shader_base.cc.o:
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f shader/CMakeFiles/shader.dir/build.make shader/CMakeFiles/shader.dir/shader_base.cc.o
-.PHONY : shader_base.cc.o
+shader.cc.o:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/shader.cc.o
+.PHONY : shader.cc.o
 
-shader_base.i: shader_base.cc.i
+shader.i: shader.cc.i
 
-.PHONY : shader_base.i
+.PHONY : shader.i
 
 # target to preprocess a source file
-shader_base.cc.i:
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f shader/CMakeFiles/shader.dir/build.make shader/CMakeFiles/shader.dir/shader_base.cc.i
-.PHONY : shader_base.cc.i
+shader.cc.i:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/shader.cc.i
+.PHONY : shader.cc.i
 
-shader_base.s: shader_base.cc.s
+shader.s: shader.cc.s
 
-.PHONY : shader_base.s
+.PHONY : shader.s
 
 # target to generate assembly for a file
-shader_base.cc.s:
-	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f shader/CMakeFiles/shader.dir/build.make shader/CMakeFiles/shader.dir/shader_base.cc.s
-.PHONY : shader_base.cc.s
+shader.cc.s:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/shader.cc.s
+.PHONY : shader.cc.s
 
 # Help Target
 help:
@@ -177,10 +177,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... shader"
-	@echo "... shader_base.o"
-	@echo "... shader_base.i"
-	@echo "... shader_base.s"
+	@echo "... steps"
+	@echo "... shader.o"
+	@echo "... shader.i"
+	@echo "... shader.s"
 .PHONY : help
 
 

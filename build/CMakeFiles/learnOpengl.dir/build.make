@@ -96,6 +96,7 @@ learnOpengl_EXTERNAL_OBJECTS =
 
 learnOpengl: CMakeFiles/learnOpengl.dir/main.cc.o
 learnOpengl: CMakeFiles/learnOpengl.dir/build.make
+learnOpengl: steps/libsteps.a
 learnOpengl: libsrc/liblibsrc.a
 learnOpengl: shader/libshader.a
 learnOpengl: CMakeFiles/learnOpengl.dir/link.txt

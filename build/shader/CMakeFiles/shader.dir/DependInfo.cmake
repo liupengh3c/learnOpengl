@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/liupeng/work/learnOpengl/shader/shader.cc" "/home/liupeng/work/learnOpengl/build/shader/CMakeFiles/shader.dir/shader.cc.o"
+  "/home/liupeng/work/learnOpengl/shader/shader_base.cc" "/home/liupeng/work/learnOpengl/build/shader/CMakeFiles/shader.dir/shader_base.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

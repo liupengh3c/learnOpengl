@@ -10,8 +10,9 @@ link_directories(${LINK_DIR})
 
 add_subdirectory(libsrc)
 add_subdirectory(shader)
+add_subdirectory(steps)
 aux_source_directory(. DIR_SRCS)
 
 # 指定生成目标
 add_executable(learnOpengl ${DIR_SRCS})
-target_link_libraries(learnOpengl glfw3 libsrc shader GL X11 pthread dl)
+target_link_libraries(learnOpengl steps glfw3 libsrc shader GL X11 pthread dl)

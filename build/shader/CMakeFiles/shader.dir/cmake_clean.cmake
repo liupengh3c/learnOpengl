@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/shader.dir/shader.cc.o"
+  "CMakeFiles/shader.dir/shader_base.cc.o"
   "libshader.a"
   "libshader.pdb"
 )

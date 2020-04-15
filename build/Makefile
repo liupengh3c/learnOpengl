@@ -166,6 +166,19 @@ shader/fast:
 	$(MAKE) -f shader/CMakeFiles/shader.dir/build.make shader/CMakeFiles/shader.dir/build
 .PHONY : shader/fast
 
+#=============================================================================
+# Target rules for targets named steps
+
+# Build rule for target.
+steps: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 steps
+.PHONY : steps
+
+# fast build rule for target.
+steps/fast:
+	$(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/build
+.PHONY : steps/fast
+
 main.o: main.cc.o
 
 .PHONY : main.o
@@ -204,6 +217,7 @@ help:
 	@echo "... learnOpengl"
 	@echo "... libsrc"
 	@echo "... shader"
+	@echo "... steps"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

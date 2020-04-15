@@ -73,12 +73,14 @@ CMAKE_BINARY_DIR = /home/liupeng/work/learnOpengl/build
 all: CMakeFiles/learnOpengl.dir/all
 all: libsrc/all
 all: shader/all
+all: steps/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: libsrc/preinstall
 preinstall: shader/preinstall
+preinstall: steps/preinstall
 
 .PHONY : preinstall
 
@@ -86,6 +88,7 @@ preinstall: shader/preinstall
 clean: CMakeFiles/learnOpengl.dir/clean
 clean: libsrc/clean
 clean: shader/clean
+clean: steps/clean
 
 .PHONY : clean
 
@@ -126,11 +129,30 @@ shader/clean: shader/CMakeFiles/shader.dir/clean
 .PHONY : shader/clean
 
 #=============================================================================
+# Directory level rules for directory steps
+
+# Recursive "all" directory target.
+steps/all: steps/CMakeFiles/steps.dir/all
+
+.PHONY : steps/all
+
+# Recursive "preinstall" directory target.
+steps/preinstall:
+
+.PHONY : steps/preinstall
+
+# Recursive "clean" directory target.
+steps/clean: steps/CMakeFiles/steps.dir/clean
+
+.PHONY : steps/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/learnOpengl.dir
 
 # All Build rule for target.
 CMakeFiles/learnOpengl.dir/all: libsrc/CMakeFiles/libsrc.dir/all
 CMakeFiles/learnOpengl.dir/all: shader/CMakeFiles/shader.dir/all
+CMakeFiles/learnOpengl.dir/all: steps/CMakeFiles/steps.dir/all
 	$(MAKE) -f CMakeFiles/learnOpengl.dir/build.make CMakeFiles/learnOpengl.dir/depend
 	$(MAKE) -f CMakeFiles/learnOpengl.dir/build.make CMakeFiles/learnOpengl.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liupeng/work/learnOpengl/build/CMakeFiles --progress-num=1,2 "Built target learnOpengl"
@@ -138,7 +160,7 @@ CMakeFiles/learnOpengl.dir/all: shader/CMakeFiles/shader.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/learnOpengl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/learnOpengl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles 0
 .PHONY : CMakeFiles/learnOpengl.dir/rule
@@ -206,6 +228,33 @@ shader: shader/CMakeFiles/shader.dir/rule
 shader/CMakeFiles/shader.dir/clean:
 	$(MAKE) -f shader/CMakeFiles/shader.dir/build.make shader/CMakeFiles/shader.dir/clean
 .PHONY : shader/CMakeFiles/shader.dir/clean
+
+#=============================================================================
+# Target rules for target steps/CMakeFiles/steps.dir
+
+# All Build rule for target.
+steps/CMakeFiles/steps.dir/all:
+	$(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/depend
+	$(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liupeng/work/learnOpengl/build/CMakeFiles --progress-num=7,8 "Built target steps"
+.PHONY : steps/CMakeFiles/steps.dir/all
+
+# Build rule for subdir invocation for target.
+steps/CMakeFiles/steps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 steps/CMakeFiles/steps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liupeng/work/learnOpengl/build/CMakeFiles 0
+.PHONY : steps/CMakeFiles/steps.dir/rule
+
+# Convenience name for target.
+steps: steps/CMakeFiles/steps.dir/rule
+
+.PHONY : steps
+
+# clean rule for target.
+steps/CMakeFiles/steps.dir/clean:
+	$(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/clean
+.PHONY : steps/CMakeFiles/steps.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
