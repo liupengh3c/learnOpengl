@@ -1,6 +1,6 @@
 # learnOpengl
 
-服务端学渲染
+服务端rd学渲染
 
 地址：https://learnopengl-cn.github.io/02%20Lighting/01%20Colors/
 英文文档地址：https://learnopengl.com/Getting-started/Textures
