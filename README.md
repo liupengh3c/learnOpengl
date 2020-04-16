@@ -3,8 +3,8 @@
 ### 服务端rd学渲染
 ### 环境: ubuntu 18.04
 
-### 地址：https://learnopengl-cn.github.io/02%20Lighting/01%20Colors/
-### 英文文档地址：https://learnopengl.com/Getting-started/Textures
+### 中文教程：https://learnopengl-cn.github.io/02%20Lighting/01%20Colors/
+### 英文教程：https://learnopengl.com/Getting-started/Textures
 
 
 ### 窗口管理库：glfw, https://www.glfw.org/download.html

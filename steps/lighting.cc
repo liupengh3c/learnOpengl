@@ -108,7 +108,7 @@ int basic_lighting()
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
     glBindVertexArray(0);
-    const float Yaw = -90.0f;
+    const float Yaw = -80.0f;
     const float Pitch = 0.0f;
     while (!glfwWindowShouldClose(window))
     {
@@ -135,7 +135,7 @@ int basic_lighting()
         glm::vec3 Up = glm::normalize(glm::cross(Right, Front));
 
         //////////////////////////////////////
-        glm::vec3 position = glm::vec3(0, 0, 3);
+        glm::vec3 position = glm::vec3(0, 0, 6);
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = glm::lookAt(position, position + Front, Up);
         cubeShader.shaderSetMat4("projection", projection);
