@@ -1050,6 +1050,12 @@ detail/setup.hpp
 detail/func_vector_relational.inl
 ../include/glm/detail/func_vector_relational.inl
 
+../include/shader_base.h
+iostream
+-
+glm/glm.hpp
+-
+
 /home/liupeng/work/learnOpengl/shader/shader_base.cc
 string
 -
@@ -1059,6 +1065,8 @@ sstream
 -
 iostream
 -
+shader_base.h
+/home/liupeng/work/learnOpengl/shader/shader_base.h
 glm/glm.hpp
 -
 glad/glad.h

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <shader.h>
+#include <shader_base.h>
 // GLM
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -41,7 +41,7 @@ int camera()
         return -1;
     }
 
-    shaderLoad("shader/src/camera_vertex.txt", "shader/src/camera_fragment.txt");
+    shader_base shader("shader/src/camera_vertex.txt", "shader/src/camera_fragment.txt");
     float vertices[] = {
         -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
         0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
@@ -170,9 +170,9 @@ int camera()
 
     stbi_image_free(data);
 
-    shaderUse();
-    shaderSetInt("texture1", 0);
-    shaderSetInt("texture2", 1);
+    shader.shaderUse();
+    shader.shaderSetInt("texture1", 0);
+    shader.shaderSetInt("texture2", 1);
     glEnable(GL_DEPTH_TEST);
 
     while (!glfwWindowShouldClose(window))
@@ -196,17 +196,17 @@ int camera()
         view = glm::lookAt(glm::vec3(camX, 0.0f, camZ), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
         projection = glm::perspective(glm::radians(45.0f), float(SCR_WIDTH / SCR_HEIGHT), 0.1f, 100.0f);
 
-        shaderSetMat4("view", view);
-        shaderSetMat4("projection", projection);
+        shader.shaderSetMat4("view", view);
+        shader.shaderSetMat4("projection", projection);
 
-        shaderSetFloat("mixValue", cameraMixValue);
-        shaderUse();
+        shader.shaderSetFloat("mixValue", cameraMixValue);
+        shader.shaderUse();
         glBindVertexArray(VAO);
         for (size_t i = 0; i < 10; i++)
         {
             model = glm::translate(model, cubePositions[i]);
             model = glm::rotate(model, glm::radians(20.0f * i), glm::vec3(1.0f, 0.3f, 0.5f));
-            shaderSetMat4("model", model);
+            shader.shaderSetMat4("model", model);
             glDrawArrays(GL_TRIANGLES, 0, 36);
         }
 

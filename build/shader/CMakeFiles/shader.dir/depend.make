@@ -153,5 +153,6 @@ shader/CMakeFiles/shader.dir/shader_base.cc.o: ../include/glm/vec2.hpp
 shader/CMakeFiles/shader.dir/shader_base.cc.o: ../include/glm/vec3.hpp
 shader/CMakeFiles/shader.dir/shader_base.cc.o: ../include/glm/vec4.hpp
 shader/CMakeFiles/shader.dir/shader_base.cc.o: ../include/glm/vector_relational.hpp
+shader/CMakeFiles/shader.dir/shader_base.cc.o: ../include/shader_base.h
 shader/CMakeFiles/shader.dir/shader_base.cc.o: ../shader/shader_base.cc
 

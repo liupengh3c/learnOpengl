@@ -22,5 +22,13 @@ int main(int argc, char **argv)
     {
         camera();
     }
+    else if (strcmp(argv[1], "color") == 0)
+    {
+        color();
+    }
+    else if (strcmp(argv[1], "light") == 0)
+    {
+        basic_lighting();
+    }
     return 0;
 }

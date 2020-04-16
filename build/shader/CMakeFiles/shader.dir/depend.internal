@@ -154,4 +154,5 @@ shader/CMakeFiles/shader.dir/shader_base.cc.o
  ../include/glm/vec3.hpp
  ../include/glm/vec4.hpp
  ../include/glm/vector_relational.hpp
+ ../include/shader_base.h
  /home/liupeng/work/learnOpengl/shader/shader_base.cc

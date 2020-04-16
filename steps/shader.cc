@@ -3,7 +3,7 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <shader.h>
+#include <shader_base.h>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -41,7 +41,7 @@ int shader()
         return -1;
     }
 
-    shaderLoad("shader/src/shader_vertex.txt", "shader/src/shader_fragment.txt");
+    shader_base shader("shader/src/shader_vertex.txt", "shader/src/shader_fragment.txt");
     float vertices[] = {
         // positions          // colors           // texture coords
         0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,   // top right
@@ -135,9 +135,9 @@ int shader()
 
     stbi_image_free(data);
 
-    shaderUse();
-    shaderSetInt("texture1", 0);
-    shaderSetInt("texture2", 1);
+    shader.shaderUse();
+    shader.shaderSetInt("texture1", 0);
+    shader.shaderSetInt("texture2", 1);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -149,8 +149,8 @@ int shader()
         glBindTexture(GL_TEXTURE_2D, texture1);
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, texture2);
-        shaderSetFloat("mixValue", mixValue);
-        shaderUse();
+        shader.shaderSetFloat("mixValue", mixValue);
+        shader.shaderUse();
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 

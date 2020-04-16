@@ -169,6 +169,33 @@ camera.cc.s:
 	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/camera.cc.s
 .PHONY : camera.cc.s
 
+color.o: color.cc.o
+
+.PHONY : color.o
+
+# target to build an object file
+color.cc.o:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/color.cc.o
+.PHONY : color.cc.o
+
+color.i: color.cc.i
+
+.PHONY : color.i
+
+# target to preprocess a source file
+color.cc.i:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/color.cc.i
+.PHONY : color.cc.i
+
+color.s: color.cc.s
+
+.PHONY : color.s
+
+# target to generate assembly for a file
+color.cc.s:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/color.cc.s
+.PHONY : color.cc.s
+
 coordinate.o: coordinate.cc.o
 
 .PHONY : coordinate.o
@@ -195,6 +222,33 @@ coordinate.s: coordinate.cc.s
 coordinate.cc.s:
 	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/coordinate.cc.s
 .PHONY : coordinate.cc.s
+
+lighting.o: lighting.cc.o
+
+.PHONY : lighting.o
+
+# target to build an object file
+lighting.cc.o:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lighting.cc.o
+.PHONY : lighting.cc.o
+
+lighting.i: lighting.cc.i
+
+.PHONY : lighting.i
+
+# target to preprocess a source file
+lighting.cc.i:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lighting.cc.i
+.PHONY : lighting.cc.i
+
+lighting.s: lighting.cc.s
+
+.PHONY : lighting.s
+
+# target to generate assembly for a file
+lighting.cc.s:
+	cd /home/liupeng/work/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lighting.cc.s
+.PHONY : lighting.cc.s
 
 shader.o: shader.cc.o
 
@@ -235,9 +289,15 @@ help:
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
+	@echo "... color.o"
+	@echo "... color.i"
+	@echo "... color.s"
 	@echo "... coordinate.o"
 	@echo "... coordinate.i"
 	@echo "... coordinate.s"
+	@echo "... lighting.o"
+	@echo "... lighting.i"
+	@echo "... lighting.s"
 	@echo "... shader.o"
 	@echo "... shader.i"
 	@echo "... shader.s"
