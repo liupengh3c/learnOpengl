@@ -9,6 +9,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+void light_framebuffer_size_callback(GLFWwindow *window, int width, int height);
+
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
@@ -34,6 +36,7 @@ int basic_lighting()
                   << std::endl;
         return -1;
     }
+    glfwSetFramebufferSizeCallback(window, light_framebuffer_size_callback);
     float vertices[] = {
         -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
         0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
@@ -140,12 +143,12 @@ int basic_lighting()
         glm::mat4 view = glm::lookAt(position, position + Front, Up);
         cubeShader.shaderSetMat4("projection", projection);
         cubeShader.shaderSetMat4("view", view);
-
+        cubeShader.shaderSetVec3("viewPos", position);
         // world transformation
         glm::mat4 model = glm::mat4(1.0f);
-        // model = glm::translate(model, glm::vec3(-1.0f, 0.0f, 0.0f));
-        // model = glm::rotate(model, glm::radians(20.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-        // model = glm::rotate(model, glm::radians(-20.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::translate(model, glm::vec3(0.0f, -1.0f, 0.0f));
+        model = glm::rotate(model, glm::radians(20.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+        // model = glm::rotate(model, glm::radians(-30.0f) * (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
         cubeShader.shaderSetMat4("model", model);
 
         glBindVertexArray(cubeVAO);
@@ -168,4 +171,9 @@ int basic_lighting()
     }
     glfwTerminate();
     return 0;
+}
+
+void light_framebuffer_size_callback(GLFWwindow *window, int width, int height)
+{
+    glViewport(0, 0, width, height);
 }
