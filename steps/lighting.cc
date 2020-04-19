@@ -3,6 +3,8 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+
+#include "camera.h"
 #include "shader_base.h"
 // GLM
 #include <glm/glm.hpp>
@@ -111,8 +113,9 @@ int basic_lighting()
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
     glBindVertexArray(0);
-    const float Yaw = -80.0f;
-    const float Pitch = 0.0f;
+
+    Camera camera(glm::vec3(0.0f, 0.0f, 5.0f));
+
     while (!glfwWindowShouldClose(window))
     {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -129,19 +132,13 @@ int basic_lighting()
         cubeShader.shaderSetVec3("viewPos", position);
         cubeShader.shaderSetVec3("lightPos", lightPos);
         ///////////////////////////////////////
-        glm::vec3 front;
-        front.x = cos(glm::radians(Yaw)) * cos(glm::radians(Pitch));
-        front.y = sin(glm::radians(Pitch));
-        front.z = sin(glm::radians(Yaw)) * cos(glm::radians(Pitch));
-        glm::vec3 Front = glm::normalize(front);
-        glm::vec3 WorldUp = glm::vec3(0.0f, 1.0f, 0.0f);
-        glm::vec3 Right = glm::normalize(glm::cross(Front, WorldUp)); // Normalize the vectors, because their length gets closer to 0 the more you look up or down which results in slower movement.
-        glm::vec3 Up = glm::normalize(glm::cross(Right, Front));
 
         //////////////////////////////////////
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-        glm::mat4 view = glm::lookAt(position, position + Front, Up);
+
         cubeShader.shaderSetMat4("projection", projection);
+
+        glm::mat4 view = camera.GetViewMatrix();
         cubeShader.shaderSetMat4("view", view);
 
         // world transformation

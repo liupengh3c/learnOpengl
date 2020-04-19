@@ -629,6 +629,7 @@ steps/CMakeFiles/steps.dir/coordinate.cc.o: ../steps/coordinate.cc
 
 steps/CMakeFiles/steps.dir/lighting.cc.o: ../include/GLFW/glfw3.h
 steps/CMakeFiles/steps.dir/lighting.cc.o: ../include/KHR/khrplatform.h
+steps/CMakeFiles/steps.dir/lighting.cc.o: ../include/camera.h
 steps/CMakeFiles/steps.dir/lighting.cc.o: ../include/glad/glad.h
 steps/CMakeFiles/steps.dir/lighting.cc.o: ../include/glm/./detail/setup.hpp
 steps/CMakeFiles/steps.dir/lighting.cc.o: ../include/glm/./detail/type_mat2x2.hpp

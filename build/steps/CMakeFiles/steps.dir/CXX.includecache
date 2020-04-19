@@ -58,6 +58,16 @@ inttypes.h
 stdint.h
 -
 
+../include/camera.h
+glad/glad.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+vector
+-
+
 ../include/glad/glad.h
 KHR/khrplatform.h
 -
@@ -1659,6 +1669,8 @@ glad/glad.h
 -
 GLFW/glfw3.h
 -
+camera.h
+/home/liupeng/study/learnOpengl/steps/camera.h
 shader_base.h
 /home/liupeng/study/learnOpengl/steps/shader_base.h
 glm/glm.hpp
