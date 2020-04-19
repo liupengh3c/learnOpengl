@@ -35,5 +35,9 @@ int main(int argc, char **argv)
     {
         material ::materials();
     }
+    else if (strcmp(argv[1], "lightmap") == 0)
+    {
+        lightmap ::lightmap();
+    }
     return 0;
 }

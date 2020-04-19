@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/steps.dir/color.cc.o"
   "CMakeFiles/steps.dir/coordinate.cc.o"
   "CMakeFiles/steps.dir/lighting.cc.o"
+  "CMakeFiles/steps.dir/lightmap.cc.o"
   "CMakeFiles/steps.dir/materials.cc.o"
   "CMakeFiles/steps.dir/shader.cc.o"
   "libsteps.pdb"

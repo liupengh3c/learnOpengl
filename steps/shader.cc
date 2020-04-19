@@ -157,6 +157,9 @@ int shader()
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    glDeleteBuffers(1, &VBO);
+    glDeleteVertexArrays(1, &VAO);
+    glDeleteVertexArrays(1, &EBO);
     glfwTerminate();
     return 0;
 }

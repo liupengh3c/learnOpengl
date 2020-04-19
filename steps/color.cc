@@ -141,6 +141,9 @@ int color()
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    glDeleteBuffers(1, &VBO);
+    glDeleteVertexArrays(1, &cubeVAO);
+    glDeleteVertexArrays(1, &lampVAO);
     glfwTerminate();
     return 0;
 }

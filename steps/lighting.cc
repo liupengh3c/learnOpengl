@@ -121,32 +121,32 @@ int basic_lighting()
         {
             glfwSetWindowShouldClose(window, true);
         }
-
+        glm::vec3 position = glm::vec3(0, 0, 6);
         // 绘制立方体，物体,cube
         cubeShader.shaderUse();
         cubeShader.shaderSetVec3("objectColor", 1.0f, 0.5f, 0.31f);
         cubeShader.shaderSetVec3("lightColor", 1.0f, 1.0f, 1.0f);
+        cubeShader.shaderSetVec3("viewPos", position);
+        cubeShader.shaderSetVec3("lightPos", lightPos);
         ///////////////////////////////////////
         glm::vec3 front;
         front.x = cos(glm::radians(Yaw)) * cos(glm::radians(Pitch));
         front.y = sin(glm::radians(Pitch));
         front.z = sin(glm::radians(Yaw)) * cos(glm::radians(Pitch));
         glm::vec3 Front = glm::normalize(front);
-        // Also re-calculate the Right and Up vector
         glm::vec3 WorldUp = glm::vec3(0.0f, 1.0f, 0.0f);
         glm::vec3 Right = glm::normalize(glm::cross(Front, WorldUp)); // Normalize the vectors, because their length gets closer to 0 the more you look up or down which results in slower movement.
         glm::vec3 Up = glm::normalize(glm::cross(Right, Front));
 
         //////////////////////////////////////
-        glm::vec3 position = glm::vec3(0, 0, 6);
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = glm::lookAt(position, position + Front, Up);
         cubeShader.shaderSetMat4("projection", projection);
         cubeShader.shaderSetMat4("view", view);
-        cubeShader.shaderSetVec3("viewPos", position);
+
         // world transformation
         glm::mat4 model = glm::mat4(1.0f);
-        model = glm::translate(model, glm::vec3(0.0f, -1.0f, 0.0f));
+        // model = glm::translate(model, glm::vec3(0.0f, -1.0f, 0.0f));
         model = glm::rotate(model, glm::radians(20.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         // model = glm::rotate(model, glm::radians(-30.0f) * (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
         cubeShader.shaderSetMat4("model", model);
@@ -169,6 +169,9 @@ int basic_lighting()
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    glDeleteBuffers(1, &VBO);
+    glDeleteVertexArrays(1, &cubeVAO);
+    glDeleteVertexArrays(1, &lampVAO);
     glfwTerminate();
     return 0;
 }

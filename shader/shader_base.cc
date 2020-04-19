@@ -41,10 +41,6 @@ shader_base ::shader_base(const char *vertexPath, const char *fragmentPath)
 
         vertexSource = strVertexSource.c_str();
         fragSource = strFragSource.c_str();
-        std::cout << "shader debug info vertexSource--------\n"
-                  << vertexSource << std::endl;
-        std::cout << "shader debug info fragSource--------\n"
-                  << fragSource << std::endl;
         unsigned int vertexShader, fragShader;
 
         // 处理顶点着色器
@@ -57,7 +53,7 @@ shader_base ::shader_base(const char *vertexPath, const char *fragmentPath)
         {
             glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
             std::cout << "vertex compile error.\n"
-                      << infoLog << std::endl;
+                      << vertexPath << infoLog << std::endl;
             return;
         }
         // 处理片段着色器
@@ -70,7 +66,7 @@ shader_base ::shader_base(const char *vertexPath, const char *fragmentPath)
         {
             glGetShaderInfoLog(fragShader, 512, NULL, infoLog);
             std::cout << "fragment compile error.\n"
-                      << infoLog << std::endl;
+                      << vertexPath << infoLog << std::endl;
             return;
         }
         // 将shader放入program，link

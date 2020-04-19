@@ -97,7 +97,7 @@ int camera()
         glm::vec3(1.5f, 0.2f, -1.5f),
         glm::vec3(-1.3f, 1.0f, -1.5f)};
 
-    unsigned int VBO, VAO, EBO;
+    unsigned int VBO, VAO;
 
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
@@ -215,6 +215,8 @@ int camera()
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    glDeleteBuffers(1, &VBO);
+    glDeleteVertexArrays(1, &VAO);
     glfwTerminate();
     return 0;
 }

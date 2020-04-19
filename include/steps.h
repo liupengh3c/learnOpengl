@@ -9,4 +9,8 @@ namespace material
 {
 int materials();
 }
+namespace lightmap
+{
+int lightmap();
+}
 #endif

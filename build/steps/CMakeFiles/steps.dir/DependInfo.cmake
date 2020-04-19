@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/liupeng/study/learnOpengl/steps/color.cc" "/home/liupeng/study/learnOpengl/build/steps/CMakeFiles/steps.dir/color.cc.o"
   "/home/liupeng/study/learnOpengl/steps/coordinate.cc" "/home/liupeng/study/learnOpengl/build/steps/CMakeFiles/steps.dir/coordinate.cc.o"
   "/home/liupeng/study/learnOpengl/steps/lighting.cc" "/home/liupeng/study/learnOpengl/build/steps/CMakeFiles/steps.dir/lighting.cc.o"
+  "/home/liupeng/study/learnOpengl/steps/lightmap.cc" "/home/liupeng/study/learnOpengl/build/steps/CMakeFiles/steps.dir/lightmap.cc.o"
   "/home/liupeng/study/learnOpengl/steps/materials.cc" "/home/liupeng/study/learnOpengl/build/steps/CMakeFiles/steps.dir/materials.cc.o"
   "/home/liupeng/study/learnOpengl/steps/shader.cc" "/home/liupeng/study/learnOpengl/build/steps/CMakeFiles/steps.dir/shader.cc.o"
   )

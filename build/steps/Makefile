@@ -233,6 +233,33 @@ lighting.cc.s:
 	cd /home/liupeng/study/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lighting.cc.s
 .PHONY : lighting.cc.s
 
+lightmap.o: lightmap.cc.o
+
+.PHONY : lightmap.o
+
+# target to build an object file
+lightmap.cc.o:
+	cd /home/liupeng/study/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lightmap.cc.o
+.PHONY : lightmap.cc.o
+
+lightmap.i: lightmap.cc.i
+
+.PHONY : lightmap.i
+
+# target to preprocess a source file
+lightmap.cc.i:
+	cd /home/liupeng/study/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lightmap.cc.i
+.PHONY : lightmap.cc.i
+
+lightmap.s: lightmap.cc.s
+
+.PHONY : lightmap.s
+
+# target to generate assembly for a file
+lightmap.cc.s:
+	cd /home/liupeng/study/learnOpengl/build && $(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lightmap.cc.s
+.PHONY : lightmap.cc.s
+
 materials.o: materials.cc.o
 
 .PHONY : materials.o
@@ -308,6 +335,9 @@ help:
 	@echo "... lighting.o"
 	@echo "... lighting.i"
 	@echo "... lighting.s"
+	@echo "... lightmap.o"
+	@echo "... lightmap.i"
+	@echo "... lightmap.s"
 	@echo "... materials.o"
 	@echo "... materials.i"
 	@echo "... materials.s"

@@ -153,9 +153,33 @@ steps/CMakeFiles/steps.dir/lighting.cc.o.provides: steps/CMakeFiles/steps.dir/li
 steps/CMakeFiles/steps.dir/lighting.cc.o.provides.build: steps/CMakeFiles/steps.dir/lighting.cc.o
 
 
+steps/CMakeFiles/steps.dir/lightmap.cc.o: steps/CMakeFiles/steps.dir/flags.make
+steps/CMakeFiles/steps.dir/lightmap.cc.o: ../steps/lightmap.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liupeng/study/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object steps/CMakeFiles/steps.dir/lightmap.cc.o"
+	cd /home/liupeng/study/learnOpengl/build/steps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/steps.dir/lightmap.cc.o -c /home/liupeng/study/learnOpengl/steps/lightmap.cc
+
+steps/CMakeFiles/steps.dir/lightmap.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/steps.dir/lightmap.cc.i"
+	cd /home/liupeng/study/learnOpengl/build/steps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liupeng/study/learnOpengl/steps/lightmap.cc > CMakeFiles/steps.dir/lightmap.cc.i
+
+steps/CMakeFiles/steps.dir/lightmap.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/steps.dir/lightmap.cc.s"
+	cd /home/liupeng/study/learnOpengl/build/steps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liupeng/study/learnOpengl/steps/lightmap.cc -o CMakeFiles/steps.dir/lightmap.cc.s
+
+steps/CMakeFiles/steps.dir/lightmap.cc.o.requires:
+
+.PHONY : steps/CMakeFiles/steps.dir/lightmap.cc.o.requires
+
+steps/CMakeFiles/steps.dir/lightmap.cc.o.provides: steps/CMakeFiles/steps.dir/lightmap.cc.o.requires
+	$(MAKE) -f steps/CMakeFiles/steps.dir/build.make steps/CMakeFiles/steps.dir/lightmap.cc.o.provides.build
+.PHONY : steps/CMakeFiles/steps.dir/lightmap.cc.o.provides
+
+steps/CMakeFiles/steps.dir/lightmap.cc.o.provides.build: steps/CMakeFiles/steps.dir/lightmap.cc.o
+
+
 steps/CMakeFiles/steps.dir/materials.cc.o: steps/CMakeFiles/steps.dir/flags.make
 steps/CMakeFiles/steps.dir/materials.cc.o: ../steps/materials.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liupeng/study/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object steps/CMakeFiles/steps.dir/materials.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liupeng/study/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object steps/CMakeFiles/steps.dir/materials.cc.o"
 	cd /home/liupeng/study/learnOpengl/build/steps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/steps.dir/materials.cc.o -c /home/liupeng/study/learnOpengl/steps/materials.cc
 
 steps/CMakeFiles/steps.dir/materials.cc.i: cmake_force
@@ -179,7 +203,7 @@ steps/CMakeFiles/steps.dir/materials.cc.o.provides.build: steps/CMakeFiles/steps
 
 steps/CMakeFiles/steps.dir/shader.cc.o: steps/CMakeFiles/steps.dir/flags.make
 steps/CMakeFiles/steps.dir/shader.cc.o: ../steps/shader.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liupeng/study/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object steps/CMakeFiles/steps.dir/shader.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liupeng/study/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object steps/CMakeFiles/steps.dir/shader.cc.o"
 	cd /home/liupeng/study/learnOpengl/build/steps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/steps.dir/shader.cc.o -c /home/liupeng/study/learnOpengl/steps/shader.cc
 
 steps/CMakeFiles/steps.dir/shader.cc.i: cmake_force
@@ -207,6 +231,7 @@ steps_OBJECTS = \
 "CMakeFiles/steps.dir/color.cc.o" \
 "CMakeFiles/steps.dir/coordinate.cc.o" \
 "CMakeFiles/steps.dir/lighting.cc.o" \
+"CMakeFiles/steps.dir/lightmap.cc.o" \
 "CMakeFiles/steps.dir/materials.cc.o" \
 "CMakeFiles/steps.dir/shader.cc.o"
 
@@ -217,11 +242,12 @@ steps/libsteps.a: steps/CMakeFiles/steps.dir/camera.cc.o
 steps/libsteps.a: steps/CMakeFiles/steps.dir/color.cc.o
 steps/libsteps.a: steps/CMakeFiles/steps.dir/coordinate.cc.o
 steps/libsteps.a: steps/CMakeFiles/steps.dir/lighting.cc.o
+steps/libsteps.a: steps/CMakeFiles/steps.dir/lightmap.cc.o
 steps/libsteps.a: steps/CMakeFiles/steps.dir/materials.cc.o
 steps/libsteps.a: steps/CMakeFiles/steps.dir/shader.cc.o
 steps/libsteps.a: steps/CMakeFiles/steps.dir/build.make
 steps/libsteps.a: steps/CMakeFiles/steps.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liupeng/study/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libsteps.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liupeng/study/learnOpengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libsteps.a"
 	cd /home/liupeng/study/learnOpengl/build/steps && $(CMAKE_COMMAND) -P CMakeFiles/steps.dir/cmake_clean_target.cmake
 	cd /home/liupeng/study/learnOpengl/build/steps && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/steps.dir/link.txt --verbose=$(VERBOSE)
 
@@ -234,6 +260,7 @@ steps/CMakeFiles/steps.dir/requires: steps/CMakeFiles/steps.dir/camera.cc.o.requ
 steps/CMakeFiles/steps.dir/requires: steps/CMakeFiles/steps.dir/color.cc.o.requires
 steps/CMakeFiles/steps.dir/requires: steps/CMakeFiles/steps.dir/coordinate.cc.o.requires
 steps/CMakeFiles/steps.dir/requires: steps/CMakeFiles/steps.dir/lighting.cc.o.requires
+steps/CMakeFiles/steps.dir/requires: steps/CMakeFiles/steps.dir/lightmap.cc.o.requires
 steps/CMakeFiles/steps.dir/requires: steps/CMakeFiles/steps.dir/materials.cc.o.requires
 steps/CMakeFiles/steps.dir/requires: steps/CMakeFiles/steps.dir/shader.cc.o.requires
 

@@ -1668,6 +1668,24 @@ glm/gtc/matrix_transform.hpp
 glm/gtc/type_ptr.hpp
 -
 
+/home/liupeng/study/learnOpengl/steps/lightmap.cc
+iostream
+-
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+shader_base.h
+/home/liupeng/study/learnOpengl/steps/shader_base.h
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+stb_image.h
+-
+
 /home/liupeng/study/learnOpengl/steps/materials.cc
 iostream
 -
