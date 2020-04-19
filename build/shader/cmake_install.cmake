@@ -1,4 +1,4 @@
-# Install script for directory: /home/liupeng/work/learnOpengl/shader
+# Install script for directory: /home/liupeng/study/learnOpengl/shader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

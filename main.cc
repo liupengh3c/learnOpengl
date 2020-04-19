@@ -2,6 +2,7 @@
 #include <string.h>
 #include <iostream>
 #include "steps.h"
+
 int main(int argc, char **argv)
 {
     if (argc < 2)
@@ -29,6 +30,10 @@ int main(int argc, char **argv)
     else if (strcmp(argv[1], "light") == 0)
     {
         basic_lighting();
+    }
+    else if (strcmp(argv[1], "material") == 0)
+    {
+        material ::materials();
     }
     return 0;
 }

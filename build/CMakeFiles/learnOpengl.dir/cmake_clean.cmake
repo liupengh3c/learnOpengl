@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/learnOpengl.dir/main.cc.o"
-  "learnOpengl"
   "learnOpengl.pdb"
+  "learnOpengl"
 )
 
 # Per-language clean rules from dependency scanning.

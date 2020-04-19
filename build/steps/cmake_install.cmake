@@ -1,4 +1,4 @@
-# Install script for directory: /home/liupeng/work/learnOpengl/steps
+# Install script for directory: /home/liupeng/study/learnOpengl/steps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

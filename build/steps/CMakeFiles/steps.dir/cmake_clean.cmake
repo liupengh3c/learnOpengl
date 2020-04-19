@@ -3,9 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/steps.dir/color.cc.o"
   "CMakeFiles/steps.dir/coordinate.cc.o"
   "CMakeFiles/steps.dir/lighting.cc.o"
+  "CMakeFiles/steps.dir/materials.cc.o"
   "CMakeFiles/steps.dir/shader.cc.o"
-  "libsteps.a"
   "libsteps.pdb"
+  "libsteps.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -5,4 +5,8 @@ int coordinate();
 int camera();
 int color();
 int basic_lighting();
+namespace material
+{
+int materials();
+}
 #endif

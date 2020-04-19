@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/liupeng/work/learnOpengl/libsrc/glad.c" "/home/liupeng/work/learnOpengl/build/libsrc/CMakeFiles/libsrc.dir/glad.c.o"
+  "/home/liupeng/study/learnOpengl/libsrc/glad.c" "/home/liupeng/study/learnOpengl/build/libsrc/CMakeFiles/libsrc.dir/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

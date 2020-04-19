@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/liupeng/work/learnOpengl/main.cc" "/home/liupeng/work/learnOpengl/build/CMakeFiles/learnOpengl.dir/main.cc.o"
+  "/home/liupeng/study/learnOpengl/main.cc" "/home/liupeng/study/learnOpengl/build/CMakeFiles/learnOpengl.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,9 +15,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/liupeng/work/learnOpengl/build/steps/CMakeFiles/steps.dir/DependInfo.cmake"
-  "/home/liupeng/work/learnOpengl/build/libsrc/CMakeFiles/libsrc.dir/DependInfo.cmake"
-  "/home/liupeng/work/learnOpengl/build/shader/CMakeFiles/shader.dir/DependInfo.cmake"
+  "/home/liupeng/study/learnOpengl/build/steps/CMakeFiles/steps.dir/DependInfo.cmake"
+  "/home/liupeng/study/learnOpengl/build/libsrc/CMakeFiles/libsrc.dir/DependInfo.cmake"
+  "/home/liupeng/study/learnOpengl/build/shader/CMakeFiles/shader.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
