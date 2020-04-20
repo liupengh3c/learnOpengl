@@ -77,9 +77,9 @@ int color()
         -0.5f, 0.5f, -0.5f, 0.0f, 1.0f};
 
     // 物体，立方体,cube
-    shader_base cubeShader("shader/src/color_cube_vertex.txt", "shader/src/color_cube_fragment.txt");
+    shader_base cubeShader("shader/src/color/cube_vertex.vert", "shader/src/color/cube_fragment.frag");
     // 光源，lamp
-    shader_base lampShader("shader/src/color_lamp_vertex.txt", "shader/src/color_lamp_fragment.txt");
+    shader_base lampShader("shader/src/color/lamp_vertex.vert", "shader/src/color/lamp_fragment.frag");
 
     // 设置立方体，cube
     unsigned int cubeVAO, VBO;

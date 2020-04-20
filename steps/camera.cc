@@ -41,7 +41,7 @@ int camera()
         return -1;
     }
 
-    shader_base shader("shader/src/camera_vertex.txt", "shader/src/camera_fragment.txt");
+    shader_base shader("shader/src/camera/vertex.vert", "shader/src/camera/fragment.frag");
     float vertices[] = {
         -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
         0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
@@ -202,15 +202,19 @@ int camera()
         shader.shaderSetFloat("mixValue", cameraMixValue);
         shader.shaderUse();
         glBindVertexArray(VAO);
-        for (size_t i = 0; i < 10; i++)
-        {
-            model = glm::translate(model, cubePositions[i]);
-            model = glm::rotate(model, glm::radians(20.0f * i), glm::vec3(1.0f, 0.3f, 0.5f));
-            shader.shaderSetMat4("model", model);
-            glDrawArrays(GL_TRIANGLES, 0, 36);
-        }
 
-        // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        // 渲染一个立方体
+        shader.shaderSetMat4("model", model);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+
+        // 渲染多个立方体
+        // for (size_t i = 0; i < 10; i++)
+        // {
+        //     model = glm::translate(model, cubePositions[i]);
+        //     model = glm::rotate(model, glm::radians(20.0f * i), glm::vec3(1.0f, 0.3f, 0.5f));
+        //     shader.shaderSetMat4("model", model);
+        //     glDrawArrays(GL_TRIANGLES, 0, 36);
+        // }
 
         glfwSwapBuffers(window);
         glfwPollEvents();

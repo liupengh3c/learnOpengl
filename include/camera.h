@@ -40,7 +40,7 @@ public:
     float Pitch;
     // Camera options
     float MovementSpeed;
-    float MouseSensitivity;
+    float MouseSensitivity = 0.03f;
     float Zoom;
 
     // Constructor with vectors

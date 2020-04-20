@@ -41,7 +41,7 @@ int shader()
         return -1;
     }
 
-    shader_base shader("shader/src/shader_vertex.txt", "shader/src/shader_fragment.txt");
+    shader_base shader("shader/src/shader/vertex.vert", "shader/src/shader/fragment.frag");
     float vertices[] = {
         // positions          // colors           // texture coords
         0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,   // top right

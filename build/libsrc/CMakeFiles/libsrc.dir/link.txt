@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblibsrc.a  CMakeFiles/libsrc.dir/glad.c.o
-/usr/bin/ranlib liblibsrc.a

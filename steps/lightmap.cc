@@ -87,9 +87,9 @@ int lightmap()
         -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
 
     // 物体，立方体,cube
-    shader_base cubeShader("shader/src/lightmap_cube_vertex.txt", "shader/src/lightmap_cube_fragment.txt");
+    shader_base cubeShader("shader/src/lightmap/cube_vertex.vert", "shader/src/lightmap/cube_fragment.frag");
     // 光源，lamp
-    shader_base lampShader("shader/src/lightmap_lamp_vertex.txt", "shader/src/lightmap_lamp_fragment.txt");
+    shader_base lampShader("shader/src/lightmap/lamp_vertex.vert", "shader/src/lightmap/lamp_fragment.frag");
 
     // 设置立方体，cube
     unsigned int cubeVAO, VBO;

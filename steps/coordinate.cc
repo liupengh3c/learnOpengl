@@ -42,7 +42,7 @@ int coordinate()
         return -1;
     }
 
-    shader_base shader("shader/src/coordinate_vertex.txt", "shader/src/coordinate_fragment.txt");
+    shader_base shader("shader/src/coordinate/vertex.vert", "shader/src/coordinate/fragment.frag");
     float vertices[] = {
         -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
         0.5f, -0.5f, -0.5f, 1.0f, 0.0f,

@@ -84,9 +84,9 @@ int materials()
         -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f};
 
     // 物体，立方体,cube
-    shader_base cubeShader("shader/src/material_cube_vertex.txt", "shader/src/material_cube_fragment.txt");
+    shader_base cubeShader("shader/src/material/cube_vertex.vert", "shader/src/material/cube_fragment.frag");
     // 光源，lamp
-    shader_base lampShader("shader/src/material_lamp_vertex.txt", "shader/src/material_lamp_fragment.txt");
+    shader_base lampShader("shader/src/material/lamp_vertex.vert", "shader/src/material/lamp_fragment.frag");
 
     // 设置立方体，cube
     unsigned int cubeVAO, VBO;
