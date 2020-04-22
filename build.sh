@@ -2,7 +2,7 @@
 rm -rf CM*
 rm -rf cmake_install.cmake
 rm Makefile
-cp -r ../shader/src/* ./shader/src/
+cp -r ../shader/* ./shader/
 cmake ..
 make clean
 make

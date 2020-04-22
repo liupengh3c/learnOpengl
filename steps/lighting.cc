@@ -89,6 +89,7 @@ int basic_lighting()
         return -1;
     }
     glfwSetFramebufferSizeCallback(window, light_framebuffer_size_callback);
+    // 非常重要，否则立方体光照会有问题
     glEnable(GL_DEPTH_TEST);
     // glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 

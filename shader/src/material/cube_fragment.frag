@@ -33,12 +33,13 @@ void main()
     float diff = max(dot(norm,lightDir),0.0f);
     vec3 diffuse =  diff * light.diffuse *  material.diffuse;
 
-    // specular
+    
     vec3 viewDir = normalize(viewPos - FragPos);
     vec3 reflectDir = reflect(-lightDir,norm);
     // 计算反光度+材质反光度
     float spec = pow(max(dot(viewDir,reflectDir),0),material.shininess);
-    // 镜面反射光+材质
+    
+    // specular
     vec3 specular = spec * light.specular *material.specular;
 
     vec3 result = ambient + diffuse + specular;
